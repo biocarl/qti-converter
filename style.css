@@ -26,6 +26,13 @@ h2, h3 {
 .button:hover {
     background-color: #45a049;
 }
+.copy {
+    cursor: pointer;
+}
+
+.copy:hover {
+    color: hotpink;
+}
 
 .question {
     background-color: #add8e6; /* Lighter blue */
@@ -36,7 +43,7 @@ h2, h3 {
 }
 
 .answer {
-    background-color: #fa8072; /* Lighter salmon */
+    background-color: steelblue; /* Lighter salmon */
     padding: 10px;
     margin-top: 10px;
     border-radius: 5px;
@@ -54,4 +61,27 @@ pre {
     padding: 15px;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Sparkling fun */
+.spark {
+    position: absolute;
+    border-radius: 50%;
+    background-color: gold;
+    width: 5px;
+    height: 5px;
+    opacity: 0;
+    animation: spark-effect 1s forwards;
+}
+
+@keyframes spark-effect {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(0);
+    }
 }
